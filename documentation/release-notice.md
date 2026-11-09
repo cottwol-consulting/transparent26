@@ -1,3 +1,8 @@
+# changes in 1.00 #
+
+moved repository
+merged in last iteration of transparent26-dev
+
 # Changes in 0.02 #
 
 Added command/response format description research summary based on

@@ -1,0 +1,10 @@
+Package: transparent26
+Version: 1.00
+Section: custom
+Priority: optional
+Architecture: amd64
+Essential: no
+Installed-Size: 1024
+Maintainer: git@cottwol.com
+Description: OSDP Transparent Mode libosdp-conformance integration
+

@@ -1,0 +1,13 @@
+#!/bin/bash
+RESPONSES=/opt/osdp-conformance/responses
+LOG=/opt/osdp-conformance/log
+mkdir -p ${LOG}
+# arg 5 is the json blob
+echo >${RESPONSES}/response_RAW $5
+echo >>${LOG}/actions.log osdp_RAW called $1 $2 $3 $4 $5 $6 $7 $8
+# note we stay in the directory open-osdp was started in.
+echo >>/opt/osdp-conformance/log/t26.log \
+  "osdp_RAW action initiated."
+/opt/transparent26/bin/osdp-action-raw-t26 2>>/opt/osdp-conformance/log/t26.log \
+  $1 $2 $3 $4 $5 $6 $7 $8
+

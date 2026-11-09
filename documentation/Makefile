@@ -3,13 +3,15 @@
 # assumes you have a working pandoc stack on the build machine...
 
 PUBLISHED=\
-  transparent-mode-implementation-guidance.md
+  testing-transparent-mode.pdf
 
 all:	${PUBLISHED}
+	mkdir -p ../opt/transparent26/etc
+	cp ${PUBLISHED} ../opt/transparent26/etc
 
 clean:
 	rm -f ${PUBLISHED}
 
-transparent-mode-implementation-guidance.pdf:	research/transparent-mode-implementation-guidance.md
-	pandoc --toc -o transparent-mode-implementation-guidance.pdf research/transparent-mode-implementation-guidance.md
+testing-transparent-mode.pdf:	doc-src/testing-transparent-mode.md
+	pandoc --toc -o testing-transparent-mode.pdf doc-src/testing-transparent-mode.md
 
