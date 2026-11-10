@@ -1,0 +1,17 @@
+[Unit]
+Description=OSDP MQTT Command Inteface
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=no
+User=root
+WorkingDirectory=/opt/osdp-conformance/tmp
+ExecStart=/opt/osdp-conformance/bin/osdp-mqtt-subscriber
+
+[Install]
+WantedBy=multi-user.target
+
+
+

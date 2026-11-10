@@ -3,6 +3,7 @@
 # (C)2026 Cottwol Consulting
 
 PROGS= osdp-mqtt-subscriber
+T26_ROOT=opt/transparent26
 
 CC=clang
 CFLAGS=-c -g -I ../include -Wall -Werror
@@ -10,8 +11,10 @@ LINK=clang
 LDFLAGS=-g -ljansson
 
 all:	${PROGS}
-	mkdir -p ../opt/osdp-conformance/bin
-	cp ${PROGS} ../opt/osdp-conformance/bin
+	mkdir -p ../${T26_ROOT}/bin
+	mkdir -p ../${T26_ROOT}/etc
+	cp ${PROGS} ../${T26_ROOT}/bin
+	cp ../integration-scripts/osdp-mqtt.service ../${T26_ROOT}/etc
 
 clean:
 	rm -f a.out *.o ${PROGS}

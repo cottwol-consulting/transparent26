@@ -1,6 +1,6 @@
 #!/bin/bash
 set -x
-TEST_SETTINGS=etc/settings
+TEST_SETTINGS=/opt/transparent26/etc/settings
 
 /opt/osdp-conformance/bin/open-osdp-kick ACU <${TEST_SETTINGS}/smartcard-scan.json
 

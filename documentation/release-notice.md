@@ -1,7 +1,8 @@
 # changes in 1.00 #
 
-moved repository
-merged in last iteration of transparent26-dev
+- moved repository
+- merged in last iteration of transparent26-dev
+- update file locations
 
 # Changes in 0.02 #
 

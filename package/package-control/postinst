@@ -1,6 +1,6 @@
 #!/bin/bash
 mkdir -p /opt/osdp-conformance/log
 echo remember to run t26-post-install to install the action scripts.
-cp /opt/osdp-conformance/etc/osdp-mqtt.service /etc/systemd/system
+cp /opt/transparent26/etc/osdp-mqtt.service /etc/systemd/system
 echo >>/opt/osdp-conformance/log/t26.log transparent26 installed.
 

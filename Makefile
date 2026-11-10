@@ -1,5 +1,6 @@
 all:
 	(cd src; make);
+	(cd test-scripts; make)
 	(cd src-mqtt; make)
 	(cd documentation; make)
 
@@ -8,6 +9,7 @@ package:	all
 
 clean:
 	(cd src; make clean)
+	(cd test-scripts; make clean)
 	(cd src-mqtt; make clean)
 	(cd documentation; make clean)
 	(cd package; make clean)

@@ -1,6 +1,6 @@
 #!/bin/bash
 set -x
-TEST_SETTINGS=etc/settings
+TEST_SETTINGS=/opt/transparent26/etc/settings
 
 echo Enable transparenct mode
 # Mode 00 PCMND XRW_MODE0_GET_MODE Code 0x00 Config XRW_MODE0_GET_CONFIG
